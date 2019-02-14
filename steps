@@ -1,0 +1,4 @@
+php artisan make:auth
+php artisan make:model -mc subscriptions
+php artisan migrate
+composer require twillo/sdk
