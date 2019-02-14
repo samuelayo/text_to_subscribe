@@ -14,8 +14,8 @@ class SubscriptionsController extends Controller
     private $client;
     public function __construct()
     {
-        $account_sid = 'AC06acaecd9c1558893647cb13f177442d';
-        $auth_token = '0cb8e9336955a8afcebafb21a85b3484';
+        $account_sid = 'XXX_ACCOUNT_SID';
+        $auth_token = 'XXX_AUTH_TOKEN';
         $this->client = new Client($account_sid, $auth_token);
     }
     public function index(Request $request){
