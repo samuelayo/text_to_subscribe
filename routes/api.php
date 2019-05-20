@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::post('/twillo/callback', 'SubscriptionsController@index')->name('twilio');
+Route::post('/twilio/callback', 'SubscriptionsController@index')->name('twilio');
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
