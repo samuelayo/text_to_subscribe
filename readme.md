@@ -38,7 +38,24 @@ Open `app/Http/Controllers/SubscriptionsController.php` file and do the followin
 - Replace the `XXX_ACCOUNT_SID` with your account sid.  
 - Replace the `XXX_AUTH_TOKEN` value with the `auth token` you copied out.
 
+#### Migrate database 
 
+Modify the following property in your .env file according to your database settings.
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=testProject
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Run the Migration
+
+```
+php artisan migrate
+```
 
 
 And finally, serve the app:
